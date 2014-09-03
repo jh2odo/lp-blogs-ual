@@ -1,0 +1,13 @@
+- Tablas:
+	- blogs: id_blogs, title, description, date, id_users
+	- posts: id_posts, title, summary, content, date, id_blogs.
+	- comments: id_comments, content, date, approved, id_posts, id_users
+	- users: id_users, username, password, email
+	- tags: id_tags, name
+	- posts_tags: id_posts, id_tags
+- Relaciones:
+	- users - blogs : 0,1 - N
+	- blogs - posts : 1 - N
+	- posts - comments : 1 - N
+	- users - comments: 1 - N
+	- posts - tags : N - M

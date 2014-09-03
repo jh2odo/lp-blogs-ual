@@ -1,0 +1,70 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINTS
+---------------------------------------------
+
+- Reunión de Planificación del Sprint (Sprint Planning Meeting): Planificación general
+- Los Scrums Diarios (Daily Scrums): Revisión diaria
+- La Revisión del Sprint (Sprint Review): Revisión al final
+- La Retrospectiva del Sprint (Sprint Retrospective): análisis del equipo
+
+Roles:
+- Scrum Master: que se aplique Scrum
+- Product Owner: responsable de la gestión del Sprint
+- Team Developer: encargados de entrar el producto terminado
+
+--------------
+
+BACKLOG (Product Backlog)
+
+- Instalación Framework Laravel 4.2
+- Diseño de BD
+- Creación de BD
+- Creación de Modelos
+- Creación de Controladores de Prototipos
+- Creación de Rutas de Prototipos
+- Creación de datos de prueba
+- Diseño de prototipos Frontend con foundation
+
+- Cración de métodos en el Controlador User y Blog para Gestionar Usuarios
+- Creación de Rutas Gestión de Usuario
+- Creación de Rutas de LogIn y LogOut
+- Rediseño de prototipos Backend - Usuarios
+
+- Ceración de métodos en el Controlador Blog para Gestionar Blogs
+- Creación del controlador Home y Rediseño del controlador Blog
+- Creación de Rutas Gestión de Blogs
+- Rediseño de prototipos Backend - Blogs
+
+- Ceración de métodos en el Controlador Post para Gestionar las Entradas
+- Creación de Rutas Gestión de Entradas (Post)
+- Rediseño de prototipos Backend - Post
+
+- Ceración de métodos en el Controlador Comment para Gestionar los comentarios
+- Creación de Rutas Gestión de Comentarios (Beckend y Frontend)
+- Rediseño de prototipos Backend y Frontend - Comentarios
+
+- Creación de BD y Modelo para Tag
+- Módificacion de métodos en el Controlador Post
+- Creación de métodos en el Controlador Tag para Gestionar las Estiquetas
+- Creación de Rutas Gestión de Estiquetas
+- Rediseño de prototipos Backend y Frontend - Comentarios
+- Migrar la interfaz Frontend y Backend con bootstrap
+- Incorporar opciones de seguridad al eliminar cualquier dato
+- Incorporar opcioner de seguridad en la ejecuión de acciones sobre otros usuarios
+
+--------------
+
+ESTAPAS DE DESARROLLO (Sprints)
+#Sprint 1 [BLOGS 1] Creación y definición BD y Diseño de Prototipos (Frontend)
+#Sprint 2 [BLOGS 2] Gestión de Usuarios (Backend)
+#Sprint 3 [BLOGS 3] Gestión Blogs (Backend)
+#Sprint 4 [BLOGS 4] Gestión Entradas - Post (Backend)
+#Sprint 5 [BLOGS 5] Gestión Comentarios (Frontend y Backend)
+#Sprint 6 [BLOGS 6] Gestión Etiquetas (Backend)
+
+--------------
+
+

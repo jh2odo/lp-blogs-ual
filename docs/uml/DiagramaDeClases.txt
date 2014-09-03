@@ -1,0 +1,19 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+DIAGRAMA DE CLASES
+---------------------------------------------
+
+HERRAMIENTA
+
+http://yuml.me/diagram/scruffy/class/draw
+
+DATOS PARA GENERAR EL DIAGRAMA
+--------------
+
+[Usuario|nombre:string;contraseña:string;email:string|getBlogs();getComentarios()]1-N[Blog|titulo:string;descripcion:string|getEntradas()]
+[Blog]1-N[Entrada]
+[Entrada|titulo:string;resumen:string;contenido:string|getComentarios();getEntradas()]1-N[Comentario|contenido:string;aprobado:boolean]
+[Etiqueta|nombre:string|getEntradas()]N-M[Entrada]
+[Usuario]1-N[Comentario]

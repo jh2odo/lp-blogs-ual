@@ -1,0 +1,45 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+DIAGRAMA DE CASOS DE USOS
+---------------------------------------------
+
+HERRAMIENTA
+
+http://yuml.me/diagram/scruffy/usecase/draw
+
+DATOS PARA GENERAR EL DIAGRAMA
+--------------
+
+[Usuario Invitado] - (Registrarse)
+[Usuario Invitado] - (Ver Blogs)
+[Usuario Invitado] - (Ver Perfil de Usuario)
+(Ver Blogs) < (Ver Blog)
+(Ver Blog) > (Ver Entrada)
+(Ver Entrada) > (Ver Comentarios)
+[Usuario Registrado] - (LogIn)
+[Usuario Registrado] - (LogOut)
+[Usuario Registrado] - (Gestionar Blogs)
+[Usuario Registrado] - (Gestionar Usuarios)
+[Usuario Registrado] - (Gestionar Entradas)
+[Usuario Registrado] - (Gestionar Etiquetas)
+[Usuario Registrado] - (Gestionar Comentarios)
+(Gestionar Blogs) < (Crear Blog)
+(Gestionar Blogs) < (Eliminar Blog)
+(Gestionar Blogs) < (Editar Blog)
+(Gestionar Entradas) < (Crear Entrada)
+(Gestionar Entradas) < (Editar Entrada)
+(Gestionar Entradas) < (Eliminar Entrada)
+(Gestionar Etiquetas) < (Crear Etiqueta)
+(Gestionar Etiquetas) < (Editar Etiqueta)
+(Gestionar Etiquetas) < (Eliminar Etiqueta)
+(Gestionar Usuarios) < (Editar Usuario)
+(Gestionar Usuarios) < (Eliminar Usuario)
+(Gestionar Comentarios) < (Aprobar Comentario)
+(Gestionar Comentarios) < (Eliminar Comentario)
+(Gestionar Comentarios) < (Crear Comentario)
+(Eliminar Usuario) > (Eliminar Blog)
+(Eliminar Blog) > (Eliminar Entrada)
+(Eliminar Entrada) > (Eliminar Comentario)
+

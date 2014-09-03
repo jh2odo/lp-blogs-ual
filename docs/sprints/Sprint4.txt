@@ -1,0 +1,43 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 4
+---------------------------------------------
+
+[BLOGS 4] Gestión Entradas - Post (Backend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+- 11 : Gestionar Entradas (Posts)
+- 16 : Crear Entrada
+- 17 : Editar Entrada
+- 18 : Eliminar Entrada
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+1 semana, 18/08 -  24/08
+
+Sprint Backlog:
+---------------------------------------------
+
+- Ceración de métodos en el Controlador Post para Gestionar las Entradas
+- Creación de Rutas Gestión de Entradas (Post)
+- Rediseño de prototipos Backend - Post
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+De forma similar a la gestiónd de Blogs, pero adaptandolo a las propiedades de los 
+modelos de Entradas (Post)
+

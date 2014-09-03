@@ -1,0 +1,45 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 2
+---------------------------------------------
+
+[BLOGS 2] Gestión de Usuarios (Backend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+- 7 : Inicio / LogIn
+- 8 : Salir / LogOut
+- 10 : Gestionar Usuario
+- 19 : Editar Usuario
+- 20 : Eliminar Usuario
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+1 semana, 04/08 -  10/08
+
+Sprint Backlog:
+---------------------------------------------
+
+- Cración de métodos en el Controlador User y Blog para Gestionar Usuarios
+- Creación de Rutas Gestión de Usuario
+- Creación de Rutas de LogIn y LogOut
+- Rediseño de prototipos Backend
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+El actualizar solo actualiza el email. Dificultades con el cambio de username y password
+A tener en cuenta que solo se editan y eliminan los usuarios sin pasar argumento, se hace con los datos de sesión
+Establecidos filtros para evitar el relogin

@@ -1,0 +1,55 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 5
+---------------------------------------------
+
+[BLOGS 5] Gestión Comentarios (Frontend y Backend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+- 12 : Gestionar Comentarios
+- 21 : Crear Comentario
+- 22 : Aprobar Comentario
+- 23 : Eliminar Comentario
+
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+1 semana, 25/08 -  31/08
+
+Sprint Backlog:
+---------------------------------------------
+
+- Ceración de métodos en el Controlador Comment para Gestionar los comentarios
+- Creación de Rutas Gestión de Comentarios (Beckend y Frontend)
+- Rediseño de prototipos Backend y Frontend - Comentarios
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+La ruta para hacer comentarios es distinta en patrón a la administración
+Solo se puede hacer comentarios si se está registrado y habiendo hecho login
+Solo es visble un comentario si el autor del blog, lo aprueba posteriormente
+
+Se implementado Ajax para la visión rápida del Comentario
+
+Los comentarios no se pueden actualizar, solo crear, borrar y aprobar (update)
+Al actulizar la aprobación o no, se actualiza al cambio del valor inmediatamente
+
+Se revisó que los comentarios solo los supervise el dueño del blog
+
+Revisar la integridad de los datos en etiquetas
+
+

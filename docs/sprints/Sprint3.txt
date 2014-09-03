@@ -1,0 +1,43 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 3
+---------------------------------------------
+
+[BLOGS 3] Gestión Blogs (Backend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+- 9 : Gestionar Blogs
+- 13 : Crear Blog
+- 14 : Eliminar Blog
+- 15 : Editar Blog
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+1 semana, 11/08 -  17/08
+
+Sprint Backlog:
+---------------------------------------------
+
+- Ceración de métodos en el Controlador Blog para Gestionar Blogs
+- Creación del controlador Home y Rediseño del controlador Blog
+- Creación de Rutas Gestión de Blogs
+- Rediseño de prototipos Backend
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+Rediseño del controlador Blog y creación de Home, para identificar bien las funciones
+que dependen de cada controlador, login, logout, registrar...

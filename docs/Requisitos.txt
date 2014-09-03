@@ -1,0 +1,15 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+REQUISITOS
+---------------------------------------------
+
+- Los usuarios pueden tener un blog o ninguno
+- Un blog es de un usuario
+- Un usuario puede escribir entradas en su blog
+- Un usuario puede comentar en todos los blogs
+- Una entrada pertenece a un blog
+- Un comentario pertenece a una entrada
+- Un usuario tiene un perfil
+

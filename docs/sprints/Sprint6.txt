@@ -1,0 +1,62 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 6
+---------------------------------------------
+
+[BLOGS 6] Gestión Etiquetas (Backend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+- 24 : Gestión de Etiquetas
+- 25 : Crear Etiquetas
+- 26 : Editar Etiquetas
+- 27 : Eliminar Etiquetas
+
+Creación y definición de las Bases de Datos.
+- Tablas:
+	- tags: id_tags, name
+	- posts_tags: id_posts, id_tags
+- Relaciones:
+	- posts - tags : N - M
+
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+3 semana, 1/09 -  3/09
+
+Sprint Backlog:
+---------------------------------------------
+
+- Creación de BD y Modelo para Tag
+- Módificacion de métodos en el Controlador Post
+- Creación de métodos en el Controlador Tag para Gestionar las Estiquetas
+- Creación de Rutas Gestión de Estiquetas
+- Rediseño de prototipos Backend y Frontend - Comentarios
+- Incorporar opciones de seguridad al eliminar cualquier dato
+- Incorporar opcioner de seguridad en la ejecuión de acciones sobre otros usuarios
+- Migrar la interfaz Frontend y Backend con bootstrap
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+Tags no se han creado funcionalmente bien, y se ha restringido a un solo tag por post y
+se ha dado soporte exlusivamente ha añadirlo cuando se crea el tag, pero no se muestra 
+en el post ni se puede editar el tag asignado.
+
+Revisar la integridad de los datos en etiquetas al operar con comentarios
+
+No se ha podido migar la interfaz Frontend y Backend al framework bootstrap
+
+No se ha realizado las medidas de seguridad

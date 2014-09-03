@@ -1,0 +1,65 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+SPRINT 1
+---------------------------------------------
+
+[BLOGS 1] Creación y definición BD y Diseño de Prototipos (Frontend)
+
+Sprint Planning Meeting
+---------------------------------------------
+
+Diseño de Prototipos
+- 1 : Registrarse
+- 2 : Ver Blogs
+- 3 : Ver Perfil de Usuario
+- 4 : Ver Blog
+- 5 : Ver Entrada
+- 6 : Ver Comentarios
+
+Creación y definición de las Bases de Datos.
+- Tablas:
+	- blogs: id_blogs, title, description, date, id_users
+	- posts: id_posts, title, summary, content, date, id_blogs.
+	- comments: id_comments, content, date, approved, id_posts, id_users
+	- users: id_users, username, password, email
+- Relaciones:
+	- users - blogs : 0,1 - N
+	- blogs - posts : 1 - N
+	- posts - comments : 1 - N
+	- users - comments: 1 - N
+
+Roles
+---------------------------------------------
+
+- Scrum Master: José Aguado
+- Product Owner: José Aguado
+- Team Developer: José Aguado
+
+Duración
+---------------------------------------------
+
+1 semana, 28/07 -  03/08 
+
+Sprint Backlog:
+---------------------------------------------
+
+- Instalación Framework Laravel 4.2
+- Diseño de BD
+- Creación de BD
+- Creación de Modelos
+- Creación de Controladores de Prototipos
+- Creación de Rutas de Prototipos
+- Creación de datos de prueba
+- Diseño de prototipos Frontend con foundation
+
+
+Sprint Review y Sprint Retrospective
+---------------------------------------------
+
+- Problemas con los ids de las tablas para usar las referencias entre modelos
+- Utiliación de la petencia de Migrations con Artisan en Laravel
+- Utilización de ORM en lugar de construir las sentencias SQL directamente
+- Prototipos con el framework foundation
+

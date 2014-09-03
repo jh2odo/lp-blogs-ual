@@ -1,0 +1,352 @@
+LABORATORIO DE PROYECTOS - UAL
+
+Sistema de Creación de Blogs - 2014 - Redmine
+
+CASOS DE USOS
+---------------------------------------------
+
+ESPECIFICACIÓN
+
+Actores: entidad externa que iteracciona con los casos de uso
+
+Relaciones:
+	- <<communicates>> : actor participa en el caso de uso
+	- <<include>> : inclusión de compartamiento entre casos de usos
+	- <<extends>> : espcialización entre casos de usos
+	- Generalización : superclase y subclase
+
+Definición de Caso de Uso:
+- Nombre
+- Actores
+- Descripción
+- Pre-condiciones
+- Post-condiciones
+- Flujo Normal
+- Flujo Alternativo
+- Relaciones
+
+--------------
+
+ACTORES
+	
+Usuarios:
+	- Ivitados: usuarios que únicamente pueden ver los blogs
+	- Registrados: usuarios que además de ver los blogs, pueden crearlos, editarlos y eliminarlos
+
+--------------
+
+CASOS DE USO
+
+Frontend
+- 1 : Registrarse
+- 2 : Ver Blogs
+- 3 : Ver Perfil de Usuario
+- 4 : Ver Blog
+- 5 : Ver Entrada
+- 6 : Ver Comentarios
+Backend
+- 7 : Inicio / LogIn
+- 8 : Salir / LogOut
+- 9 : Gestionar Blogs
+- 10 : Gestionar Usuario
+- 11 : Gestionar Entradas (Posts)
+- 12 : Gestionar Comentarios
+- 13 : Crear Blog
+- 14 : Eliminar Blog
+- 15 : Editar Blog
+- 16 : Crear Entrada
+- 17 : Editar Entrada
+- 18 : Eliminar Entrada
+- 19 : Editar Usuario
+- 20 : Eliminar Usuario
+- 21 : Crear Comentario (Frontend)
+- 22 : Aprobar Comentario
+- 23 : Eliminar Comentario
+- 24 : Gestión de Etiquetas
+- 25 : Crear Etiquetas
+- 26 : Editar Etiquetas
+- 27 : Eliminar Etiquetas
+
+--------------
+
+- ID: 1
+- Nombre: Registrarse
+- Actores: Usuario Invitado
+- Descripción: Acción para que un usuario pueda darse de alta en el sistema
+- Pre-condiciones: 
+	- El usuario no está registrado
+- Post-condiciones: 
+	- El usuario ya está registrado
+- Flujo Normal: 
+	- 1. Enviar datos
+	- 2. Validar datos
+	- 3. Guardar el registro
+	- 4. Redireccionar al login
+- Flujo Alternativo: 
+	- 2. Datos erróneos, muestra el error y posibilidad de nuevo el punto 1
+- Relaciones: Ninguna
+
+- ID: 2
+- Nombre: Ver Blogs
+- Actores: Usuario Invitado y Usuario Registrado
+- Descripción: Acción para mostrar un resumen de todos los blogs
+- Pre-condiciones: 
+	- 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: Ninguna
+
+- ID: 3
+- Nombre: Ver Perfil de Usuario
+- Actores: Usuario Invitado y Usuario Registrado
+- Descripción: Acción para la información sobre un usuario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: Ninguna
+
+- ID: 4
+- Nombre: Ver Blog
+- Actores: Usuario Invitado y Usuario Registrado
+- Descripción: Acción para mostrar las entradas de un blog concreto
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+	- Extend: Ver Blogs
+	- Include: Ver Entrada
+
+- ID: 5
+- Nombre: Ver Entrada
+- Actores: Usuario Invitado y Usuario Registrado
+- Descripción: Acción para mostrar una entrada concreta de un blog
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 6
+- Nombre: Ver Comentarios
+- Actores: Usuario Invitado y Usuario Registrado
+- Descripción: Acción para ver los comentarios de cada entrada
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 7
+- Nombre: Inicio / LogIn
+- Actores: Usuario Registrado
+- Descripción: Acción para poder entrar en el sistema con un usuario ya registrado previamente
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 8
+- Nombre: Salir / LogOut
+- Actores: Usuario Registrado
+- Descripción: Acción para salir de forma segura del sistema
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 9
+- Nombre: Gestionar Blogs
+- Actores: Usuario Registrado
+- Descripción: Muestra las opciones que permiten gestionar los blogs de un usuario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 10
+- Nombre: Gestionar Usuario
+- Actores: Usuario Registrado
+- Descripción: Muestra las opciones que permiten gestionar la información de un usuario, el perfil
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 11
+- Nombre: Gestionar Entradas (Posts)
+- Actores: Usuario Registrado
+- Descripción: Muestra las opciones que permiten gestionar los las entradas de todos los blogs de un usuario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 12
+- Nombre: Gestionar Comentarios
+- Actores: Usuario Registrado
+- Descripción: Muestra las opciones que permiten gestionar los comentarios que los usuarios han creado en los blogs de un usuario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 13
+- Nombre: Crear Blog
+- Actores: Usuario Registrado
+- Descripción: Acción para crear un blog por medio de la introducción de varios datos
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 14
+- Nombre: Eliminar Blog
+- Actores: Usuario Registrado
+- Descripción: Acción que permite eliminar un blog y todos los datos dependientes por parte del usuario propietario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 15
+- Nombre: Editar Blog
+- Actores: Usuario Registrado
+- Descripción: Acción que muestra las opciones para editar un blog de un usuario propietario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 16
+- Nombre: Crear Entrada
+- Actores: Usuario Registrado
+- Descripción: Acción que permite crear una entrada de un blog
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 17
+- Nombre: Editar Entrada
+- Actores: Usuario Registrado
+- Descripción: Acción que permite editar uan entrada perteneciente a un blog
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 18
+- Nombre: Eliminar Entrada
+- Actores: Usuario Registrado
+- Descripción: Acción que permite eliminar una entrada de un blog
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 19
+- Nombre: Editar Usuario
+- Actores: Usuario Registrado
+- Descripción: Muestra los datos que pueden modificarse de un usuario y actúa sobre ellos
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 20
+- Nombre: Eliminar Usuario
+- Actores: Usuario Registrado
+- Descripción: Acción que permite eliminar un usuario y todos los datos que dependan del mismo
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 21
+- Nombre: Crear Comentario (Frontend)
+- Actores: Usuario Registrado
+- Descripción: Acción que permite crear un comentario en una entrada
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 22
+- Nombre: Aprobar Comentario
+- Actores: Usuario Registrado
+- Descripción: Acción que permite aprobar la visualización de un comentario en una entrada
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 23
+- Nombre: Eliminar Comentario
+- Actores: Usuario Registrado
+- Descripción: Acción que elimina un comentario
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 24
+- Nombre: Gestión de Etiquetas
+- Actores: Usuario Registrado
+- Descripción: Muestra las opciones disponibles para gestionar las etiquetas
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 25
+- Nombre: Crear Etiquetas
+- Actores: Usuario Registrado
+- Descripción: Acción de crear etiquetas para posteriormente tener la posiblidad de asignarlas a una entrada
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 26
+- Nombre: Editar Etiquetas
+- Actores: Usuario Registrado
+- Descripción: Acción de editar una etiqueta concreta para cambiar el valor de sus propiedades
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+- ID: 27
+- Nombre: Eliminar Etiquetas
+- Actores: Usuario Registrado
+- Descripción: Acción que permite eliminar etiquetas
+- Pre-condiciones: 
+- Post-condiciones: 
+- Flujo Normal: 
+- Flujo Alternativo: 
+- Relaciones: 
+
+--------------
